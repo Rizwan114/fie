@@ -1,4 +1,3 @@
-import { log } from 'console';
 import React from 'react';
 
 
@@ -19,7 +18,7 @@ async function Page() {
   
   return (
     <div>
-      {client.map((todo,map)=> (
+      {client.map((todo,index)=> (
         <div className='border border-black gap-6 flex flex-col'>
           <p>userId:T{todo.userId}</p>
           <p>Id:{todo.id}</p>
